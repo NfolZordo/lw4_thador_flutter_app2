@@ -55,17 +55,17 @@ class _StringProcessingHomePageState extends State<StringProcessingHomePage> {
                   textAlign: TextAlign.center,
               ),
             ),
-      Padding(
-        padding: EdgeInsets.only(top: 5,right: 8,bottom: 8,left: 8),
-          child: TextField(
-            controller: content,
+          Padding(
+            padding: EdgeInsets.only(top: 5,right: 8,bottom: 8,left: 8),
+              child: TextField(
+                controller: content,
 
-            decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Введіть рядок',
-                ),
-              ),
-        ),
+                decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Введіть рядок',
+                    ),
+                  ),
+          ),
             TextButton(
               onPressed: () {setState((){
                 inputText = content.text;
